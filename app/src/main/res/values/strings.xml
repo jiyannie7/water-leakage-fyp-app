@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">WLRMS</string>
+    <string name="not_registered_create_account_here">Not registered? Create account here</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">REGISTER</string>
+    <string name="email_address">Email address</string>
+    <string name="name">Name</string>
+    <string name="contact_number">Contact number</string>
+    <string name="password">Password</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="enter_your_email_below_to_reset_your_password">Enter your email below to reset your password</string>
+    <string name="reset">RESET</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="login_login">LOGIN</string>
+    <string name="report_leakage">REPORT FORM</string>
+    <string name="report_status">REPORT STATUS</string>
+    <string name="maintenance_status">MAINTENANCE STATUS</string>
+    <string name="register_title">REGISTER</string>
+    <string name="report_form">Report form</string>
+    <string name="date">Date</string>
+    <string name="message">Message</string>
+    <string name="category">Category</string>
+    <string name="district_of_reported_matter">District of reported matter</string>
+    <string name="division_of_reported_matter">Division of reported matter</string>
+    <string name="submit">SUBMIT</string>
+    <string name="news_notification_alert">News notification alert</string>
+    <string name="maintenance_alert">Maintenance alert</string>
+    <string name="pipe_burst">Pipe burst</string>
+    <string name="low_pressure_water">Low pressure water</string>
+    <string name="water_cleaning">Water cleaning</string>
+    <string name="others">Others</string>
+    <string name="title_activity_report_status">ReportStatusActivity</string>
+    <string name="mdc_76_jalan_permaisuri_kampung_wireless">MDC 76, Jalan Permaisuri,Kampung Wireless</string>
+    <string name="scheduled">SCHEDULED</string>
+    <string name="_1_1_2021">1/1/2021</string>
+    <string name="water_leaks">Water leaks</string>
+    <string name="mdc_76_jalan_permaisuri_kampung_wireless_miri">MDC 76, Jalan Permaisuri, Kampung Wireless, Miri</string>
+    <string name="none">None</string>
+    <string name="sample_of_sent_message">Sample of sent message</string>
+    <string name="water_leakage_reporting_and_monitoring">Water Leakage Reporting and Monitoring</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="send">SEND</string>
+    <string name="announcement">Announcement</string>
+    <string name="announcements">Announcements</string>
+    <string name="todo">TODO</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="already_have_an_account_login_here">Already have an account? Login here</string>
+    <string name="miri">Miri</string>
+    <string name="sample_of_received_message">Sample of received message</string>
+
+
+</resources>

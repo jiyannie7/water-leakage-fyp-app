@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fyp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.ReportFormActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center"
+        android:text="@string/report_form"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="@color/system_lighter_blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="filled"
+            app:boxStrokeColor="@color/system_dark_blue"
+            app:boxStrokeWidth="1dp"
+            app:expandedHintEnabled="true"
+            app:helperText="Required*"
+            app:helperTextEnabled="true"
+            app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/system_dark_blue">
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:focusable="false"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/date"
+                android:inputType="date"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:background="#FFFFFF"
+            android:textColorHint="@color/system_lighter_blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="filled"
+            app:boxStrokeColor="@color/system_dark_blue"
+            app:expandedHintEnabled="true"
+            app:helperText="Required*"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/system_dark_blue">
+
+            <EditText
+                android:id="@+id/et_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:focusable="false"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/category"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="@color/system_lighter_blue"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxStrokeColor="@color/system_dark_blue"
+            app:expandedHintEnabled="true"
+            app:helperText="Required*"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_location_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#D0FFFFFF"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/division_of_reported_matter"
+                android:inputType="textLongMessage|textPersonName"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="@color/system_lighter_blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/system_dark_blue"
+            app:expandedHintEnabled="true"
+            app:helperText="Required*"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/et_location_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#D0FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/district_of_reported_matter"
+                android:inputType="textLongMessage|textPersonName"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="1dp"
+            android:textColorHint="@color/system_lighter_blue"
+            app:boxBackgroundColor="#A4FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxStrokeColor="@color/system_dark_blue"
+            app:expandedHintEnabled="true"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:autofillHints=""
+                android:breakStrategy="simple"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/message"
+                android:inputType="textMultiLine"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|end"
+        android:gravity="bottom|end"
+        android:orientation="vertical">
+
+        <Button
+            style="?buttonBarStyle"
+            android:id="@+id/btn_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/system_dark_blue"
+            android:fontFamily="@font/cabin_bold"
+            android:padding="20dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

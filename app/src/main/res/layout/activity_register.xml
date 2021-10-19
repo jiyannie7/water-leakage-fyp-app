@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.RegisterActivity">
+
+    <TextView
+        android:id="@+id/reg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="@string/register_title"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:theme="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="@color/system_blue"
+            app:boxBackgroundMode="filled"
+            app:errorContentDescription="Please provide name"
+            app:errorEnabled="false"
+            app:helperTextEnabled="false"
+            app:hintAnimationEnabled="true">
+
+            <EditText
+                android:id="@+id/et_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/name"
+                android:inputType="none|textPersonName"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            app:boxBackgroundColor="@color/system_blue"
+            app:boxBackgroundMode="filled">
+
+            <EditText
+                android:id="@+id/et_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            app:boxBackgroundColor="@color/system_blue"
+            app:boxBackgroundMode="filled">
+
+            <EditText
+                android:id="@+id/et_register_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/contact_number"
+                android:inputType="number"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            app:boxBackgroundColor="@color/system_blue"
+            app:boxBackgroundMode="filled">
+
+            <EditText
+                android:id="@+id/et_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            app:boxBackgroundColor="@color/system_blue"
+            app:boxBackgroundMode="filled">
+
+            <EditText
+                android:id="@+id/et_register_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/cabin"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/system_dark_blue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_has_registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_register"
+        android:layout_marginVertical="40dp"
+        android:fontFamily="@font/cabin_bold"
+        android:gravity="center"
+        android:text="@string/already_have_an_account_login_here"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_register"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@color/system_dark_blue"
+            android:fontFamily="@font/cabin_bold"
+            android:padding="20dp"
+            android:text="@string/register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

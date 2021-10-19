@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/betong"
+        android:title="Betong" />
+
+    <item
+        android:id="@+id/bintulu"
+        android:title="Bintulu" />
+
+    <item
+        android:id="@+id/kapit"
+        android:title="Kapit" />
+
+    <item
+        android:id="@+id/kuching"
+        android:title="Kuching" />
+
+    <item
+        android:id="@+id/limbang"
+        android:title="Limbang" />
+
+    <item
+        android:id="@+id/miri"
+        android:title="Miri" />
+
+    <item
+        android:id="@+id/mukah"
+        android:title="Mukah" />
+
+    <item
+        android:id="@+id/samarahan"
+        android:title="Samarahan" />
+
+    <item
+        android:id="@+id/sarikei"
+        android:title="Sarikei" />
+
+    <item
+        android:id="@+id/serian"
+        android:title="Serian" />
+
+    <item
+        android:id="@+id/sibu"
+        android:title="Sibu" />
+
+    <item
+        android:id="@+id/sri_aman"
+        android:title="Sri Aman" />
+</menu>
